@@ -1,1 +1,1 @@
-/* No CSS */
+*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit;font-size:1.6rem}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}::-moz-selection{background-color:#D9FF38;color:#1A2F39}::selection{background-color:#D9FF38;color:#1A2F39}.headline-primary{padding:0 6vh;font-family:"Montserrat", sans-serif;font-weight:700;font-size:8vh;color:#EEECEC;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;width:100vw;text-align:center}

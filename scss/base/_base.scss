@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: $default-font-size;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $color-tertiary;
+    color: $color-primary-dark;
+}
