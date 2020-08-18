@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url("../img/bg-header.jpg");
+
+    &__headline {
+        padding-top: 0;
+    }
+
+    &__typewriter {
+        font-family: "Courier Prime", monospace;
+        font-size: 7rem;
+        font-weight: 300;
+        color: $color-secondary;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 4rem;
+        font-size: 8rem;
+        color: rgba($color-primary-light, .9);
+        animation: moveInTop 2.5s ease-out 6;
+    }
+}

@@ -1,0 +1,53 @@
+.nav {
+    position: fixed;
+    top: 0;
+    padding: 4rem 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $color-secondary;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+    &__logo {
+        color: inherit;
+        text-decoration: inherit;
+        letter-spacing: inherit;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: lowercase;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: inherit;
+            text-decoration: inherit;
+            letter-spacing: inherit;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-tertiary;
+        }
+        
+    }    
+
+    &__button {
+        display: none;
+    }
+}

@@ -1,0 +1,6 @@
+@mixin focus {
+    outline: none;
+    border: 2px solid $color-tertiary;
+    border-radius: 3px;
+    padding: .2rem;
+}
