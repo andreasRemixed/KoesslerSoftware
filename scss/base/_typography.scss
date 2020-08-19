@@ -1,8 +1,9 @@
 .headline-primary {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-primary;
     font-weight: 700;
     font-size: 7rem;
     color: $color-primary-light;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 8rem;
+    margin-bottom: 8rem;
 }

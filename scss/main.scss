@@ -7,7 +7,12 @@
 @import "base/utilities.scss";
 @import "base/animations.scss";
 
+@import "components/tabs.scss";
+@import "components/slider.scss";
+
 @import "layout/section.scss";
 @import "layout/header.scss";
 @import "layout/nav.scss";
 @import "layout/leistungen.scss";
+@import "layout/portfolio.scss";
+@import "layout/kontakt.scss";

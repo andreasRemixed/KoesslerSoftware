@@ -1,0 +1,55 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: $font-primary;
+  color: $color-primary-dark;
+
+  &__tab {
+      min-width: 32%;
+      border-bottom: solid 5px $color-primary-dark;
+
+      &:hover,
+      &:active {
+          border-bottom: solid 5px $color-secondary;
+          cursor: pointer;
+      }
+
+      &:hover .tabs__headline,
+      &:active .tabs__headline {
+          color: $color-secondary;
+      }
+  }
+
+  &__number {
+      font-size: 2rem;
+  }
+
+  &__headline {
+      font-size: 3rem;
+      padding-bottom: 1rem;      
+  }
+
+  &__text {
+      width: 66%;
+      display: none;
+      margin-top: 6rem;
+      font-family: $font-secondary;
+      font-size: 3rem;
+      line-height: 1.4;
+      hyphens: auto;
+
+      &--software {
+        display: block;
+      }
+
+      &--xr {
+        display: none;
+      }
+
+      &--arbeitsweise {
+        display: none;
+      }
+  }
+}
