@@ -1,6 +1,7 @@
 const tabs = document.querySelectorAll(".tabs__tab");
 const tabsHeadline = document.querySelectorAll(".tabs__headline");
-//const content = document.querySelectorAll(".tabs__text--" + tabs[0].classList[1]);
+const content = document.querySelectorAll(".tabs__text");
+console.log(content);
 
 tabs.forEach(tab => {
     tab.addEventListener("click", e => {
