@@ -82,6 +82,7 @@ body {
 .tabs__tab {
   min-width: 32%;
   border-bottom: solid 5px #1A2F39;
+  list-style-type: none;
 }
 
 .tabs__tab:hover, .tabs__tab:active {
@@ -94,6 +95,11 @@ body {
   color: #577DD3;
 }
 
+.tabs .activeTab {
+  border-bottom: solid 5px #577DD3;
+  cursor: pointer;
+}
+
 .tabs__number {
   font-size: 2rem;
 }
@@ -103,9 +109,13 @@ body {
   padding-bottom: 1rem;
 }
 
+.tabs .activeHeadline {
+  color: #577DD3;
+}
+
 .tabs__text {
   width: 66%;
-  display: none;
+  display: block;
   margin-top: 6rem;
   font-family: "Courier Prime", monospace;
   font-size: 3rem;
@@ -117,14 +127,17 @@ body {
 
 .tabs__text--software {
   display: block;
+  font-size: inherit;
 }
 
 .tabs__text--xr {
   display: none;
+  font-size: inherit;
 }
 
 .tabs__text--arbeitsweise {
   display: none;
+  font-size: inherit;
 }
 
 .section {

@@ -9,6 +9,7 @@
   &__tab {
       min-width: 32%;
       border-bottom: solid 5px $color-primary-dark;
+      list-style-type: none;
 
       &:hover,
       &:active {
@@ -22,6 +23,11 @@
       }
   }
 
+  .activeTab {
+    border-bottom: solid 5px $color-secondary;
+    cursor: pointer;
+  }
+
   &__number {
       font-size: 2rem;
   }
@@ -31,9 +37,13 @@
       padding-bottom: 1rem;      
   }
 
+  .activeHeadline {
+    color: $color-secondary;
+  }
+
   &__text {
       width: 66%;
-      display: none;
+      display: block;
       margin-top: 6rem;
       font-family: $font-secondary;
       font-size: 3rem;
@@ -42,14 +52,17 @@
 
       &--software {
         display: block;
+        font-size: inherit;
       }
 
       &--xr {
         display: none;
+        font-size: inherit;
       }
 
       &--arbeitsweise {
         display: none;
+        font-size: inherit;
       }
   }
 }

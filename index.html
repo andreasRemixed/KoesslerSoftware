@@ -1,128 +1,148 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.min.css">
   <link
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@500;700&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
   <title>Kössler.Software</title>
 </head>
+
 <body>
 
 
-<header class="header section" id="home">
-  <nav class="nav">
-    <a href="#home" class="nav__logo">Kössler.Software</a>
-    <ul class="nav__list">
-      <li class="nav__item"><a href="#leistungen" class="nav__link">Leistungen</a></li>
-      <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-      <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
-    </ul>
-    <ion-icon class="nav__button" name="menu-outline"></ion-icon>
-  </nav>
-  <h1 class="header__headline headline-primary">Wir entwickeln <span class="header__typewriter">Business Solutions</span></h1>
-  <ion-icon class="header__icon" name="chevron-down-outline"></ion-icon>
-</header>
+  <header class="header section" id="home">
+    <nav class="nav">
+      <a href="#home" class="nav__logo">Kössler.Software</a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#leistungen" class="nav__link">Leistungen</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+      </ul>
+      <ion-icon class="nav__button" name="menu-outline"></ion-icon>
+    </nav>
+    <h1 class="header__headline headline-primary">Wir entwickeln <span class="header__typewriter">Business
+        Solutions</span></h1>
+    <ion-icon class="header__icon" name="chevron-down-outline"></ion-icon>
+  </header>
 
-<section class="leistungen section" id="leistungen">
-  <h2 class="leistungen__headline headline-primary">Das bieten wir an</h2>
-  <div class="tabs">
-    <div class="tabs__tab software">
+  <section class="leistungen section" id="leistungen">
+    <h2 class="leistungen__headline headline-primary">Das bieten wir an</h2>
+    <ul class="tabs">
+      <li class="tabs__tab software activeTab">
         <p class="tabs__number">01</p>
         <h2 class="tabs__headline">Maßgeschneiderte<br>Software</h2>
-    </div>
-    <div class="tabs__tab xr">
+      </li>
+      <li class="tabs__tab xr">
         <p class="tabs__number">02</p>
         <h2 class="tabs__headline">Virtual & Augmented<br>Reality</h2>
-    </div>
-    <div class="tabs__tab arbeitsweise">
+      </li>
+      <li class="tabs__tab arbeitsweise">
         <p class="tabs__number">03</p>
         <h2 class="tabs__headline">Erfolgsweg<br>So arbeiten wir</h2>
+      </li>
+    </ul>
+
+    <section class="tabs__text">
+      <p class="tabs__text--software activeHeadline">Üblicherweise wird Software gezielt für eine große Zielgruppe entwickelt und muss
+        somit vielseitig einsetzbar sein. Anpassungen oder Änderungen an diesen Programmen sind meist nur mit großem
+        Aufwand oder gar nicht möglich.<br><br>Wir entwickeln Software, die speziell auf Ihre geschäftlichen Bedürfnisse
+        abgestimmt ist und adaptieren Ihre bestehende Software, um neuen Anforderungen gerecht zu werden.</p>
+
+      <p class="tabs__text--xr">Virtual und Augmented Reality Applikationen haben ein breites Anwendungsgebiet und das
+        Potential klassische Arbeitsabläufe zu revolutionieren. Sei es zur digitalen Assistenz in der Produktion und
+        Qualitätssicherung, als Mittel zur Kollaboration im Team oder um Produkte auf neuartige, interaktive Weise zu
+        präsentieren.<br><br>Von der simplen Mobile-App am Handy bis zum vollkommen immersiven Erlebnis mit neuesten
+        Technologien wie der Microsoft HoloLens sind wir der richtige Partner, um Ihre Konzepte und Ideen technisch
+        umzusetzen.
+      </p>
+
+      <p class="tabs__text--arbeitsweise">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta totam fugiat
+        aspernatur accusamus. Eius labore aliquam nisi quaerat, consectetur quo minus quam fugiat quia
+        doloribus, rem, laboriosam laudantium suscipit!
+      </p>
+    </section>
+
+  </section>
+
+  <section class="portfolio section" id="portfolio">
+    <h2 class="headline-primary">Portfolio</h2>
+    <div class="slider">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      <div class="slider__items">
+        <div class="slider__item slider__item--01">
+          <p class="slider__itemSoftware"></p>
+          <p class="slider__itemKunde"></p>
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+
+        <div class="slider__item slider__item--02">
+          <p class="slider__itemSoftware"></p>
+          <p class="slider__itemKunde"></p>
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+
+        <div class="slider__item slider__item--03">
+          <p class="slider__itemSoftware"></p>
+          <p class="slider__itemKunde"></p>
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+
+        <div class="slider__item slider__item--04">
+          <p class="slider__itemSoftware"></p>
+          <p class="slider__itemKunde"></p>
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
     </div>
+  </section>
 
-    <p class="tabs__text tabs__text--software">Üblicherweise wird Software gezielt für eine große Zielgruppe entwickelt und muss somit vielseitig einsetzbar sein. Anpassungen oder Änderungen an diesen Programmen sind meist nur mit großem Aufwand oder gar nicht möglich.<br><br>Wir entwickeln Software, die speziell auf Ihre geschäftlichen Bedürfnisse abgestimmt ist und adaptieren Ihre bestehende Software, um neuen Anforderungen gerecht zu werden.</p>
-
-    <p class="tabs__text tabs__text--xr">Virtual und Augmented Reality Applikationen haben ein breites Anwendungsgebiet und das Potential klassische Arbeitsabläufe zu revolutionieren. Sei es zur digitalen Assistenz in der Produktion und Qualitätssicherung, als Mittel zur Kollaboration im Team oder um Produkte auf neuartige, interaktive Weise zu präsentieren.<br><br>Von der simplen Mobile-App am Handy bis zum vollkommen immersiven Erlebnis mit neuesten Technologien wie der Microsoft HoloLens sind wir der richtige Partner, um Ihre Konzepte und Ideen technisch umzusetzen.</p>
-
-    <p class="tabs__text tabs__text--arbeitsweise">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta totam fugiat
-      aspernatur accusamus. Eius labore aliquam nisi quaerat, consectetur quo minus quam fugiat quia
-      doloribus, rem, laboriosam laudantium suscipit!</p>
-
-</div>
-</section>
-    
-<section class="portfolio section" id="portfolio">
-  <h2 class="headline-primary">Portfolio</h2>
-  <div class="slider">
-    <ion-icon name="chevron-back-outline"></ion-icon>
-    <div class="slider__items">
-      <div class="slider__item slider__item--01">
-        <p class="slider__itemSoftware"></p>
-        <p class="slider__itemKunde"></p>
-        <ion-icon name="add-circle-outline"></ion-icon>
+  <section class="kontakt section" id="kontakt">
+    <h2 class="headline-primary">Lassen Sie mit uns<br>Ihre Ideen Realität werden</h2>
+    <div class="kontakt-container">
+      <div class="kontaktdaten">
+        <div class="kontaktdaten__block">
+          <p class="kontaktdaten__text">Christian Kössler</p>
+          <p class="kontaktdaten__text">Otterweg 15/3/3<br>1220 Wien</p>
+        </div>
+        <div class="kontaktdaten__block">
+          <a href="mailto:ck@koessler.software" class="kontaktdaten__link">ck@koessler.software</a>
+          <a href="tel:0676-740-1366" class="kontaktdaten__link">0676-740-1366</a>
+        </div>
+        <div class="kontaktdaten__block">
+          <a href="#" class="kontaktdaten__link">Impressum</a>
+        </div>
       </div>
 
-      <div class="slider__item slider__item--02">
-        <p class="slider__itemSoftware"></p>
-        <p class="slider__itemKunde"></p>
-        <ion-icon name="add-circle-outline"></ion-icon>
-      </div>
+      <div class="formular">
+        <form action="action_page.php">
 
-      <div class="slider__item slider__item--03">
-        <p class="slider__itemSoftware"></p>
-        <p class="slider__itemKunde"></p>
-        <ion-icon name="add-circle-outline"></ion-icon>
-      </div>
+          <input class="formular__input formular__input--daten" type="text" id="name" name="name"
+            placeholder="Ihr Name…">
 
-      <div class="slider__item slider__item--04">
-        <p class="slider__itemSoftware"></p>
-        <p class="slider__itemKunde"></p>
-        <ion-icon name="add-circle-outline"></ion-icon>
-      </div>
-    </div>
-    <ion-icon name="chevron-forward-outline"></ion-icon>
-  </div>
-</section>
-
-<section class="kontakt section" id="kontakt">
-  <h2 class="headline-primary">Lassen Sie mit uns<br>Ihre Ideen Realität werden</h2>
-  <div class="kontakt-container">
-    <div class="kontaktdaten">
-      <div class="kontaktdaten__block">
-        <p class="kontaktdaten__text">Christian Kössler</p>
-        <p class="kontaktdaten__text">Otterweg 15/3/3<br>1220 Wien</p>
-      </div>
-      <div class="kontaktdaten__block">
-        <a href="mailto:ck@koessler.software" class="kontaktdaten__link">ck@koessler.software</a>
-        <a href="tel:0676-740-1366" class="kontaktdaten__link">0676-740-1366</a>
-      </div>
-      <div class="kontaktdaten__block">
-        <a href="#" class="kontaktdaten__link">Impressum</a>
-      </div>
-    </div>
-
-    <div class="formular">
-      <form action="action_page.php">
-
-        <input class="formular__input formular__input--daten" type="text" id="name" name="name" placeholder="Ihr Name…">
-
-        <input class="formular__input formular__input--daten" type="email" id="email" name="email"
+          <input class="formular__input formular__input--daten" type="email" id="email" name="email"
             placeholder="Ihre Email-Adress…">
 
-        <textarea class="formular__input formular__input--nachricht" id="nachricht" name="nachricht"
+          <textarea class="formular__input formular__input--nachricht" id="nachricht" name="nachricht"
             placeholder="Ihre Nachricht…" style="height:200px"></textarea>
 
-        <input class="formular__input formular__input--button" type="submit" value="Submit">
+          <input class="formular__input formular__input--button" type="submit" value="Submit">
 
-    </form>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+  <script src="/js/tabs.js"></script>
 </body>
+
 </html>
