@@ -19,3 +19,10 @@ body {
     background-color: $color-tertiary;
     color: $color-primary-dark;
 }
+
+.scrollwrapper {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}

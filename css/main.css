@@ -27,6 +27,15 @@ body {
   color: #1A2F39;
 }
 
+.scrollwrapper {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+}
+
 .headline-primary {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -86,18 +95,17 @@ body {
 }
 
 .tabs__tab:hover, .tabs__tab:active {
-  border-bottom: solid 5px #577DD3;
+  border-bottom: solid 5px rgba(87, 125, 211, 0.8);
   cursor: pointer;
+}
+
+.tabs__tab--active {
+  border-bottom-color: #577DD3;
 }
 
 .tabs__tab:hover .tabs__headline,
 .tabs__tab:active .tabs__headline {
-  color: #577DD3;
-}
-
-.tabs .activeTab {
-  border-bottom: solid 5px #577DD3;
-  cursor: pointer;
+  color: rgba(87, 125, 211, 0.8);
 }
 
 .tabs__number {
@@ -109,13 +117,13 @@ body {
   padding-bottom: 1rem;
 }
 
-.tabs .activeHeadline {
+.tabs__headline--active {
   color: #577DD3;
 }
 
 .tabs__text {
   width: 66%;
-  display: block;
+  display: none;
   margin-top: 6rem;
   font-family: "Courier Prime", monospace;
   font-size: 3rem;
@@ -125,25 +133,15 @@ body {
           hyphens: auto;
 }
 
-.tabs__text--software {
+.tabs__text--active {
   display: block;
-  font-size: inherit;
-}
-
-.tabs__text--xr {
-  display: none;
-  font-size: inherit;
-}
-
-.tabs__text--arbeitsweise {
-  display: none;
-  font-size: inherit;
 }
 
 .section {
   max-width: 100vw;
   min-height: 100vh;
   padding: 4rem 15rem;
+  scroll-snap-align: start;
 }
 
 .header {
@@ -157,17 +155,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 47, 57, 0.9)), to(rgba(26, 47, 57, 0.9))), url("../img/bg-header.jpg");
   background-image: -webkit-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: -o-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
-}
-
-.header__headline {
-  padding-top: 0;
 }
 
 .header__typewriter {
@@ -178,8 +172,7 @@ body {
 }
 
 .header__icon {
-  position: absolute;
-  bottom: 4rem;
+  margin-top: 20%;
   font-size: 8rem;
   color: rgba(238, 236, 236, 0.9);
   -webkit-animation: moveInTop 2.5s ease-out 6;

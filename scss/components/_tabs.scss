@@ -13,19 +13,17 @@
 
       &:hover,
       &:active {
-          border-bottom: solid 5px $color-secondary;
+          border-bottom: solid 5px rgba($color-secondary, .8);
           cursor: pointer;
+      }
+      &--active {
+        border-bottom-color: $color-secondary;
       }
 
       &:hover .tabs__headline,
       &:active .tabs__headline {
-          color: $color-secondary;
-      }
-  }
-
-  .activeTab {
-    border-bottom: solid 5px $color-secondary;
-    cursor: pointer;
+          color: rgba($color-secondary, .8);
+      }      
   }
 
   &__number {
@@ -34,35 +32,24 @@
 
   &__headline {
       font-size: 3rem;
-      padding-bottom: 1rem;      
-  }
+      padding-bottom: 1rem;
 
-  .activeHeadline {
-    color: $color-secondary;
+      &--active {
+        color: $color-secondary;
+      }
   }
 
   &__text {
       width: 66%;
-      display: block;
+      display: none;
       margin-top: 6rem;
       font-family: $font-secondary;
       font-size: 3rem;
       line-height: 1.4;
       hyphens: auto;
 
-      &--software {
+      &--active {
         display: block;
-        font-size: inherit;
-      }
-
-      &--xr {
-        display: none;
-        font-size: inherit;
-      }
-
-      &--arbeitsweise {
-        display: none;
-        font-size: inherit;
       }
   }
 }
