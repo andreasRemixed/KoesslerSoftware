@@ -1,6 +1,6 @@
 # KoesslerSoftware
 
-This is the portfolio website for KösslerSoftware.
+This is the portfolio website for Kössler.Software.
 
 Used Tech:
 
