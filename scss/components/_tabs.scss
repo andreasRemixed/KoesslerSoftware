@@ -27,11 +27,11 @@
   }
 
   &__number {
-      font-size: 2rem;
+      font-size: clamp(1.6rem, 1.6vw, 2rem);
   }
 
   &__headline {
-      font-size: 3rem;
+      font-size: clamp(2rem, 2.5vw, 3rem);
       padding-bottom: 1rem;
 
       &--active {
@@ -44,7 +44,7 @@
       display: none;
       margin-top: 6rem;
       font-family: $font-secondary;
-      font-size: 3rem;
+      font-size: clamp(1.8rem, 2vw, 3rem);
       line-height: 1.4;
       hyphens: auto;
 

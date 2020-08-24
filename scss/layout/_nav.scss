@@ -3,6 +3,7 @@
     top: 0;
     padding: 4rem 15rem;
     width: 100%;
+    max-width: 1900px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -11,14 +12,30 @@
     text-decoration: none;
     letter-spacing: 2px;
 
-    &__logo {
-        color: inherit;
-        text-decoration: inherit;
-        letter-spacing: inherit;
-        font-weight: 700;
-        font-size: 3rem;
-        text-transform: lowercase;
+    @media (max-width: 1100px){
+        padding: 4rem 4rem;
     }
+
+    &__logo {
+        &:link,
+        &:visited {
+            color: inherit;
+            text-decoration: inherit;
+            letter-spacing: inherit;
+            font-weight: 700;
+            font-size: 3rem;
+            text-transform: lowercase;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-tertiary;
+        }
+    }
+
+    
 
     &__list {
         display: flex;
@@ -41,7 +58,9 @@
         }
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
+            outline: none;
             border-bottom: 2px solid $color-tertiary;
         }
         

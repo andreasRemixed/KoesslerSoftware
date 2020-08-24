@@ -1,7 +1,8 @@
 .headline-primary {
     font-family: $font-primary;
     font-weight: 700;
-    font-size: 7rem;
+    font-size: clamp(5rem, 7vw, 7rem);
+    line-height: 1.1;
     color: $color-primary-light;
     text-align: center;
     padding-top: 8rem;

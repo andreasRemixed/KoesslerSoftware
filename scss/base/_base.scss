@@ -25,4 +25,8 @@ body {
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+
+    @media (max-width: 1350px){
+        scroll-snap-type: none;
+    }
 }
