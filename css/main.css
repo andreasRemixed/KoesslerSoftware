@@ -143,7 +143,7 @@ body {
 }
 
 .tabs__headline {
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
   letter-spacing: 2px;
   line-height: 1;
   padding-bottom: 1rem;
@@ -157,7 +157,7 @@ body {
   width: 70%;
   display: none;
   font-family: "Courier Prime", monospace;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(1.8rem, 2vw, 3rem);
   line-height: 1.3;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -168,9 +168,34 @@ body {
   display: block;
 }
 
+.tabs__text--mobile {
+  display: none;
+  margin-bottom: 4rem;
+  width: 70%;
+  display: none;
+  font-family: "Courier Prime", monospace;
+  font-size: clamp(1.8rem, 2vw, 3rem);
+  line-height: 1.3;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+@media (max-width: 1350px) {
+  .tabs__text--mobile {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1350px) {
   .tabs__text {
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .tabs__text--mobile {
+    display: block;
   }
 }
 
@@ -211,7 +236,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 47, 57, 0.9)), to(rgba(26, 47, 57, 0.9))), url("../img/bg-header.jpg");
-  background-image: -webkit-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: -o-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   font-size: clamp(5rem, 6vw, 12rem);
@@ -255,7 +279,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  color: #577DD3;
+  color: #1A2F39;
   font-family: "Staatliches", cursiv;
   text-decoration: none;
   letter-spacing: 2px;
@@ -272,7 +296,7 @@ body {
   text-decoration: inherit;
   letter-spacing: inherit;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: lowercase;
 }
 
