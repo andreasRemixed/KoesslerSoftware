@@ -1,4 +1,4 @@
-# KoesslerSoftware
+# Koessler.Software
 
 This is the portfolio website for Kössler.Software.
 
