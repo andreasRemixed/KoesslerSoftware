@@ -18,8 +18,9 @@
       margin-bottom: 6rem;
 
       @media (max-width: 700px){
-        width: 100%;
+        width: 65%;
         margin-bottom: 3rem;
+        //border-bottom: none;
     }
 
       &:hover,
@@ -69,12 +70,16 @@
         @include tabText;
 
         @media (max-width: 1350px){
+          width: 90%;
+        }
+
+        @media (max-width: 500px){
           width: 100%;
         }
       }
 
       @media (max-width: 1350px){
-        width: 100%;
+        width: 90%;
       }
 
       @media (max-width: 700px){

@@ -1,7 +1,7 @@
 .nav {
     position: fixed;
     top: 0;
-    padding: 4rem 15rem;
+    padding: 2rem 15rem;
     width: 100%;
     max-width: 1900px;
     display: flex;
@@ -11,27 +11,27 @@
     font-family: $font-primary;
     text-decoration: none;
     letter-spacing: 2px;
+    background-color: $color-primary-light;
 
     @media (max-width: 1100px){
-        padding: 4rem 2.5rem;
+        padding: 2rem 2.5rem;
     }
 
     &__logo {
         &:link,
         &:visited {
-            color: inherit;
+            color: $color-secondary;
             text-decoration: inherit;
             letter-spacing: inherit;
             font-weight: 700;
-            font-size: 2.5rem;
-            text-transform: lowercase;
+            font-size: 2rem;
         }
 
         &:hover,
         &:active,
         &:focus {
             outline: none;
-            border-bottom: 2px solid $color-tertiary;
+            border-bottom: 2px solid $color-secondary;
         }
     }
 
@@ -42,7 +42,7 @@
         justify-content: space-between;
         list-style-type: none;
 
-        @media (max-width: 800px){
+        @media (max-width: 700px){
             display: none;
         }
     }
@@ -65,17 +65,17 @@
         &:active,
         &:focus {
             outline: none;
-            border-bottom: 2px solid $color-tertiary;
+            border-bottom: 2px solid $color-secondary;
         }
         
     }    
 
     &__button {
         display: none;
-        font-size: 4rem;
-        align-self: flex-end;
+        font-size: 3rem;
+        align-self: center;
 
-        @media (max-width: 800px){
+        @media (max-width: 700px){
             display: block;
         }
     }

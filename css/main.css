@@ -44,6 +44,11 @@ body {
   }
 }
 
+@font-face {
+  font-family: "DM Mono";
+  src: url("../../fonts/DMMono-Regular.woff") format("woff");
+}
+
 .headline-primary {
   font-family: "Staatliches", cursiv;
   font-weight: 700;
@@ -117,23 +122,23 @@ body {
 
 @media (max-width: 700px) {
   .tabs__tab {
-    width: 100%;
+    width: 65%;
     margin-bottom: 3rem;
   }
 }
 
 .tabs__tab:hover, .tabs__tab:active {
-  border-bottom: solid 5px rgba(87, 125, 211, 0.8);
+  border-bottom: solid 5px rgba(85, 96, 231, 0.8);
   cursor: pointer;
 }
 
 .tabs__tab--active {
-  border-bottom-color: #577DD3;
+  border-bottom-color: #5560e7;
 }
 
 .tabs__tab:hover .tabs__headline,
 .tabs__tab:active .tabs__headline {
-  color: rgba(87, 125, 211, 0.8);
+  color: rgba(85, 96, 231, 0.8);
 }
 
 .tabs__number {
@@ -150,15 +155,16 @@ body {
 }
 
 .tabs__headline--active {
-  color: #577DD3;
+  color: #5560e7;
 }
 
 .tabs__text {
   width: 70%;
   display: none;
-  font-family: "Courier Prime", monospace;
+  font-family: "DM Mono", monospace;
   font-size: clamp(1.8rem, 2vw, 3rem);
-  line-height: 1.3;
+  font-weight: 400;
+  line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -173,9 +179,10 @@ body {
   margin-bottom: 4rem;
   width: 70%;
   display: none;
-  font-family: "Courier Prime", monospace;
+  font-family: "DM Mono", monospace;
   font-size: clamp(1.8rem, 2vw, 3rem);
-  line-height: 1.3;
+  font-weight: 400;
+  line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -183,13 +190,19 @@ body {
 
 @media (max-width: 1350px) {
   .tabs__text--mobile {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs__text--mobile {
     width: 100%;
   }
 }
 
 @media (max-width: 1350px) {
   .tabs__text {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -236,9 +249,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 47, 57, 0.9)), to(rgba(26, 47, 57, 0.9))), url("../img/bg-header.jpg");
+  background-image: -webkit-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: -o-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
-  font-size: clamp(5rem, 6vw, 12rem);
+  font-size: clamp(5rem, 6vw, 11rem);
 }
 
 .header__headline {
@@ -249,11 +263,11 @@ body {
 
 .header__typewriter {
   display: block;
-  font-family: "Courier Prime", monospace;
+  font-family: "DM Mono", monospace;
   font-size: inherit;
   font-weight: 300;
   line-height: 1;
-  color: #577DD3;
+  color: rgba(85, 96, 231, 0.7);
 }
 
 .header__icon {
@@ -267,7 +281,7 @@ body {
 .nav {
   position: fixed;
   top: 0;
-  padding: 4rem 15rem;
+  padding: 2rem 15rem;
   width: 100%;
   max-width: 1900px;
   display: -webkit-box;
@@ -283,26 +297,26 @@ body {
   font-family: "Staatliches", cursiv;
   text-decoration: none;
   letter-spacing: 2px;
+  background-color: #EEECEC;
 }
 
 @media (max-width: 1100px) {
   .nav {
-    padding: 4rem 2.5rem;
+    padding: 2rem 2.5rem;
   }
 }
 
 .nav__logo:link, .nav__logo:visited {
-  color: inherit;
+  color: #5560e7;
   text-decoration: inherit;
   letter-spacing: inherit;
   font-weight: 700;
-  font-size: 2.5rem;
-  text-transform: lowercase;
+  font-size: 2rem;
 }
 
 .nav__logo:hover, .nav__logo:active, .nav__logo:focus {
   outline: none;
-  border-bottom: 2px solid #D9FF38;
+  border-bottom: 2px solid #5560e7;
 }
 
 .nav__list {
@@ -315,7 +329,7 @@ body {
   list-style-type: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .nav__list {
     display: none;
   }
@@ -335,17 +349,18 @@ body {
 
 .nav__link:hover, .nav__link:active, .nav__link:focus {
   outline: none;
-  border-bottom: 2px solid #D9FF38;
+  border-bottom: 2px solid #5560e7;
 }
 
 .nav__button {
   display: none;
-  font-size: 4rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-size: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .nav__button {
     display: block;
   }
@@ -367,5 +382,5 @@ body {
 
 .kontakt {
   background-color: #1A2F39;
-  font-family: "Courier Prime", monospace;
+  font-family: "DM Mono", monospace;
 }
