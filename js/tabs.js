@@ -2,6 +2,10 @@ const tabs = document.querySelectorAll(".tabs__tab");
 const content = document.querySelectorAll(".tabs__text");
 const tabsArr = Array.prototype.slice.call(tabs);
 
+
+
+
+
 tabs.forEach(tab => {
       tab.addEventListener("click", e => {
             resetStyles();

@@ -1,27 +1,15 @@
 .tabs {
   display: flex;
-  //flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
   font-family: $font-primary;
   color: $color-primary-dark;
 
-  @media (max-width: 700px){
-    flex-direction: column;
-    align-items: flex-start;
-}
-
   &__tab {
-      min-width: 32%;
+      width: 32%;
       border-bottom: solid 5px $color-primary-dark;
       list-style-type: none;
       margin-bottom: 6rem;
-
-      @media (max-width: 700px){
-        width: 65%;
-        margin-bottom: 3rem;
-        //border-bottom: none;
-    }
 
       &:hover,
       &:active {
@@ -37,7 +25,6 @@
       &:active .tabs__headline {
           color: rgba($color-secondary, .8);
       }
-             
   }
 
   &__number {
@@ -47,7 +34,7 @@
   }
 
   &__headline {
-      font-size: clamp(2.5rem, 2.5vw, 3rem);
+      font-size: clamp(1.8rem, 1.8vw, 3rem);
       letter-spacing: 2px;
       line-height: 1;
       padding-bottom: 1rem;
@@ -67,25 +54,44 @@
       &--mobile {
         display: none;
         margin-bottom: 4rem;
-        @include tabText;
-
-        @media (max-width: 1350px){
-          width: 90%;
-        }
-
-        @media (max-width: 500px){
-          width: 100%;
-        }
+        @include tabText;        
       }
+  }
+}
 
-      @media (max-width: 1350px){
-        width: 90%;
-      }
 
-      @media (max-width: 700px){
-        &--mobile {
-          display: block;
-        }
-    }
+
+@media (max-width: 1350px) {
+  .tabs__text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs__tab {
+    width: 65%;
+    margin-bottom: 3rem;
+    border-bottom-color: $color-secondary;
+  }
+
+  .tabs__headline {
+    color: $color-secondary;
+  }
+  
+  .tabs__text--mobile {
+    display: block;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  .tabs__text--mobile {
+    width: 100%;
   }
 }

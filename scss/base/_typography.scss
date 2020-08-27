@@ -1,11 +1,10 @@
 .headline-primary {
     font-family: $font-primary;
     font-weight: 700;
-    font-size: clamp(5rem, 5vw, 9rem);
+    font-size: clamp(4rem, (calc(1rem + 5vw)), 8rem);
     line-height: 1.1;
-    letter-spacing: 3px;
     color: $color-primary-light;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: clamp(2rem, 4vw, 8rem);
     margin-bottom: clamp(2rem, 4vw, 8rem);
 }

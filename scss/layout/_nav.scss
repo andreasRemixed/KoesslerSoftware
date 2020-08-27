@@ -11,7 +11,7 @@
     font-family: $font-primary;
     text-decoration: none;
     letter-spacing: 2px;
-    background-color: $color-primary-light;
+    //background-color: $color-primary-dark;
 
     @media (max-width: 1100px){
         padding: 2rem 2.5rem;
@@ -20,18 +20,24 @@
     &__logo {
         &:link,
         &:visited {
-            color: $color-secondary;
+            
             text-decoration: inherit;
-            letter-spacing: inherit;
+            letter-spacing: 4px;
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 1.8rem;
+
+            color: $color-primary-light;
+            padding: .5rem 1rem;
+            border: 2px solid $color-primary-light;
+            border-radius: 2px;
+            background-color: $color-primary-dark;
         }
 
         &:hover,
         &:active,
         &:focus {
             outline: none;
-            border-bottom: 2px solid $color-secondary;
+            border: 2px solid $color-secondary;
         }
     }
 
@@ -42,30 +48,35 @@
         justify-content: space-between;
         list-style-type: none;
 
-        @media (max-width: 700px){
+        @media (max-width: 800px){
             display: none;
         }
     }
 
     &__item:not(:last-child) {
-        margin-right: 3rem;
+        margin-right: 2rem;
     }
 
     &__link {
         &:link,
         &:visited {
-            color: inherit;
             text-decoration: inherit;
             letter-spacing: inherit;
-            font-size: 2rem;
-            font-weight: 300;
+            font-size: 1.8rem;
+            font-weight: 400;
+
+            color: $color-primary-light;
+            padding: .5rem 1rem;
+            border: 2px solid $color-primary-light;
+            border-radius: 2px;
+            background-color: $color-primary-dark;
         }
 
         &:hover,
         &:active,
         &:focus {
             outline: none;
-            border-bottom: 2px solid $color-secondary;
+            border: 2px solid $color-secondary;
         }
         
     }    
@@ -73,9 +84,16 @@
     &__button {
         display: none;
         font-size: 3rem;
+        font-weight: bold;
         align-self: center;
+        
+        color: $color-primary-light;
+            //padding: .5rem 1rem;
+            border: 2px solid $color-primary-light;
+            border-radius: 2px;
+            background-color: $color-primary-dark;
 
-        @media (max-width: 700px){
+        @media (max-width: 800px){
             display: block;
         }
     }

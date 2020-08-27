@@ -44,20 +44,14 @@ body {
   }
 }
 
-@font-face {
-  font-family: "DM Mono";
-  src: url("../../fonts/DMMono-Regular.woff") format("woff");
-}
-
 .headline-primary {
-  font-family: "Staatliches", cursiv;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: clamp(5rem, 5vw, 9rem);
+  font-size: clamp(4rem, calc(1rem + 5vw), 8rem);
   line-height: 1.1;
-  letter-spacing: 3px;
   color: #EEECEC;
   text-align: center;
-  padding-top: 8rem;
+  padding-top: clamp(2rem, 4vw, 8rem);
   margin-bottom: clamp(2rem, 4vw, 8rem);
 }
 
@@ -97,34 +91,15 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-family: "Staatliches", cursiv;
+  font-family: "Montserrat", sans-serif;
   color: #1A2F39;
 }
 
-@media (max-width: 700px) {
-  .tabs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
 .tabs__tab {
-  min-width: 32%;
+  width: 32%;
   border-bottom: solid 5px #1A2F39;
   list-style-type: none;
   margin-bottom: 6rem;
-}
-
-@media (max-width: 700px) {
-  .tabs__tab {
-    width: 65%;
-    margin-bottom: 3rem;
-  }
 }
 
 .tabs__tab:hover, .tabs__tab:active {
@@ -148,7 +123,7 @@ body {
 }
 
 .tabs__headline {
-  font-size: clamp(2.5rem, 2.5vw, 3rem);
+  font-size: clamp(1.8rem, 1.8vw, 3rem);
   letter-spacing: 2px;
   line-height: 1;
   padding-bottom: 1rem;
@@ -162,7 +137,7 @@ body {
   width: 70%;
   display: none;
   font-family: "DM Mono", monospace;
-  font-size: clamp(1.8rem, 2vw, 3rem);
+  font-size: clamp(1.8rem, 1.5vw, 2.5rem);
   font-weight: 400;
   line-height: 1.4;
   -webkit-hyphens: auto;
@@ -180,24 +155,12 @@ body {
   width: 70%;
   display: none;
   font-family: "DM Mono", monospace;
-  font-size: clamp(1.8rem, 2vw, 3rem);
+  font-size: clamp(1.8rem, 1.5vw, 2.5rem);
   font-weight: 400;
   line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-}
-
-@media (max-width: 1350px) {
-  .tabs__text--mobile {
-    width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  .tabs__text--mobile {
-    width: 100%;
-  }
 }
 
 @media (max-width: 1350px) {
@@ -207,8 +170,31 @@ body {
 }
 
 @media (max-width: 700px) {
+  .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .tabs__tab {
+    width: 65%;
+    margin-bottom: 3rem;
+    border-bottom-color: #5560e7;
+  }
+  .tabs__headline {
+    color: #5560e7;
+  }
   .tabs__text--mobile {
     display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs__text--mobile {
+    width: 100%;
   }
 }
 
@@ -216,7 +202,7 @@ body {
   width: 100vw;
   max-width: 1900px;
   min-height: 100vh;
-  padding: 4rem 15rem;
+  padding: 0rem 15rem;
   margin: 0 auto;
   scroll-snap-align: start;
 }
@@ -252,22 +238,22 @@ body {
   background-image: -webkit-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: -o-linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
   background-image: linear-gradient(rgba(26, 47, 57, 0.9), rgba(26, 47, 57, 0.9)), url("../img/bg-header.jpg");
-  font-size: clamp(5rem, 6vw, 11rem);
+  font-size: clamp(4rem, calc(1rem + 5vw), 8rem);
 }
 
 .header__headline {
   margin-top: auto;
   font-size: inherit;
-  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .header__typewriter {
-  display: block;
+  display: inline-block;
   font-family: "DM Mono", monospace;
   font-size: inherit;
   font-weight: 300;
   line-height: 1;
-  color: rgba(85, 96, 231, 0.7);
+  color: #5560e7;
 }
 
 .header__icon {
@@ -294,10 +280,9 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   color: #1A2F39;
-  font-family: "Staatliches", cursiv;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
-  background-color: #EEECEC;
 }
 
 @media (max-width: 1100px) {
@@ -307,16 +292,20 @@ body {
 }
 
 .nav__logo:link, .nav__logo:visited {
-  color: #5560e7;
   text-decoration: inherit;
-  letter-spacing: inherit;
+  letter-spacing: 4px;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #EEECEC;
+  padding: .5rem 1rem;
+  border: 2px solid #EEECEC;
+  border-radius: 2px;
+  background-color: #1A2F39;
 }
 
 .nav__logo:hover, .nav__logo:active, .nav__logo:focus {
   outline: none;
-  border-bottom: 2px solid #5560e7;
+  border: 2px solid #5560e7;
 }
 
 .nav__list {
@@ -329,38 +318,47 @@ body {
   list-style-type: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .nav__list {
     display: none;
   }
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .nav__link:link, .nav__link:visited {
-  color: inherit;
   text-decoration: inherit;
   letter-spacing: inherit;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #EEECEC;
+  padding: .5rem 1rem;
+  border: 2px solid #EEECEC;
+  border-radius: 2px;
+  background-color: #1A2F39;
 }
 
 .nav__link:hover, .nav__link:active, .nav__link:focus {
   outline: none;
-  border-bottom: 2px solid #5560e7;
+  border: 2px solid #5560e7;
 }
 
 .nav__button {
   display: none;
   font-size: 3rem;
+  font-weight: bold;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: #EEECEC;
+  border: 2px solid #EEECEC;
+  border-radius: 2px;
+  background-color: #1A2F39;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .nav__button {
     display: block;
   }
