@@ -11,7 +11,7 @@
     font-family: $font-primary;
     text-decoration: none;
     letter-spacing: 2px;
-    //background-color: $color-primary-dark;
+    background-color: $color-primary-light;
 
     @media (max-width: 1100px){
         padding: 2rem 2.5rem;
@@ -23,14 +23,14 @@
             
             text-decoration: inherit;
             letter-spacing: 4px;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 1.8rem;
 
-            color: $color-primary-light;
+            color: $color-primary-dark;
             padding: .5rem 1rem;
-            border: 2px solid $color-primary-light;
+            border: 2px solid $color-primary-dark;
             border-radius: 2px;
-            background-color: $color-primary-dark;
+            //background-color: $color-primary-dark;
         }
 
         &:hover,
@@ -63,13 +63,13 @@
             text-decoration: inherit;
             letter-spacing: inherit;
             font-size: 1.8rem;
-            font-weight: 400;
+            font-weight: 500;
 
-            color: $color-primary-light;
+            color: $color-primary-dark;
             padding: .5rem 1rem;
-            border: 2px solid $color-primary-light;
+            border: 2px solid $color-primary-dark;
             border-radius: 2px;
-            background-color: $color-primary-dark;
+            background-color: $color-primary-light;
         }
 
         &:hover,
@@ -83,7 +83,7 @@
 
     &__button {
         display: none;
-        font-size: 3rem;
+        font-size: 3.2rem;
         font-weight: bold;
         align-self: center;
         

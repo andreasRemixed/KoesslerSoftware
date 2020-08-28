@@ -138,7 +138,7 @@ body {
   display: none;
   font-family: "DM Mono", monospace;
   font-size: clamp(1.8rem, 1.5vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -156,7 +156,7 @@ body {
   display: none;
   font-family: "DM Mono", monospace;
   font-size: clamp(1.8rem, 1.5vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -283,6 +283,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
+  background-color: #EEECEC;
 }
 
 @media (max-width: 1100px) {
@@ -294,13 +295,12 @@ body {
 .nav__logo:link, .nav__logo:visited {
   text-decoration: inherit;
   letter-spacing: 4px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.8rem;
-  color: #EEECEC;
+  color: #1A2F39;
   padding: .5rem 1rem;
-  border: 2px solid #EEECEC;
+  border: 2px solid #1A2F39;
   border-radius: 2px;
-  background-color: #1A2F39;
 }
 
 .nav__logo:hover, .nav__logo:active, .nav__logo:focus {
@@ -332,12 +332,12 @@ body {
   text-decoration: inherit;
   letter-spacing: inherit;
   font-size: 1.8rem;
-  font-weight: 400;
-  color: #EEECEC;
+  font-weight: 500;
+  color: #1A2F39;
   padding: .5rem 1rem;
-  border: 2px solid #EEECEC;
+  border: 2px solid #1A2F39;
   border-radius: 2px;
-  background-color: #1A2F39;
+  background-color: #EEECEC;
 }
 
 .nav__link:hover, .nav__link:active, .nav__link:focus {
@@ -347,7 +347,7 @@ body {
 
 .nav__button {
   display: none;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: bold;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

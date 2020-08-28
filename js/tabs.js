@@ -1,7 +1,23 @@
 const tabs = document.querySelectorAll(".tabs__tab");
 const content = document.querySelectorAll(".tabs__text");
 const tabsArr = Array.prototype.slice.call(tabs);
+const mediaQuery = window.matchMedia("(max-width: 700px)");
 
+
+
+mediaQuery.addListener(function(changed) {
+
+      if (mediaQuery.matches) {
+            resetStyles();
+      } else if (changed.matches) {
+            resetStyles();
+      } else {
+            resetStyles();
+            tabs[0].classList.add("tabs__tab--active");
+            tabs[0].children[1].classList.add("tabs__headline--active");
+            content[0].classList.add("tabs__text--active");
+      }
+})
 
 
 
@@ -24,3 +40,4 @@ function resetStyles() {
             })
       }
 }
+
