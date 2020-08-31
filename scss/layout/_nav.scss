@@ -11,7 +11,7 @@
     font-family: $font-primary;
     text-decoration: none;
     letter-spacing: 2px;
-    background-color: $color-primary-light;
+    //background-color: $color-primary-light;
 
     @media (max-width: 1100px){
         padding: 2rem 2.5rem;
@@ -26,11 +26,11 @@
             font-weight: 500;
             font-size: 1.8rem;
 
-            color: $color-primary-dark;
+            color: $color-primary-light;
             padding: .5rem 1rem;
-            border: 2px solid $color-primary-dark;
+            border: 2px solid $color-primary-light;
             border-radius: 2px;
-            //background-color: $color-primary-dark;
+            background-color: $color-primary-dark;
         }
 
         &:hover,
@@ -65,11 +65,11 @@
             font-size: 1.8rem;
             font-weight: 500;
 
-            color: $color-primary-dark;
+            color: $color-primary-light;
             padding: .5rem 1rem;
-            border: 2px solid $color-primary-dark;
+            border: 2px solid $color-primary-light;
             border-radius: 2px;
-            background-color: $color-primary-light;
+            background-color: $color-primary-dark;
         }
 
         &:hover,

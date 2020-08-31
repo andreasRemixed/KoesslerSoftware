@@ -25,6 +25,14 @@ body {
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow: auto;
+    //overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
 
     @media (max-width: 1350px){
         scroll-snap-type: none;
