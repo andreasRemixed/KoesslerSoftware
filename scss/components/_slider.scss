@@ -1,0 +1,132 @@
+.slider {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            display: none;
+        }
+    }
+
+    &__item {
+        min-width: 32%;
+        height: 100%;
+        border: solid 5px $color-primary-light;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:not(:last-child) {
+            margin-right: 2%;
+        }
+
+        &:hover {
+            border-color: $color-tertiary;
+            cursor: pointer;
+        }
+
+        &Inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba($color-primary-dark, .8);
+            opacity: 0;
+        }
+
+        &--01 {
+            background-image: url(../../img/bg-rohrmax.png);
+
+            &:hover * {
+                opacity: 1;
+            }
+        }
+
+        &--02 {
+            background-image: url(../../img/bg-fluxguide.png);
+
+            &:hover * {
+                opacity: 1;
+            }
+        }
+
+        &--03 {
+            background-image: url(../../img/bg-lifesystems.png);
+
+            &:hover * {
+                opacity: 1;
+            }
+        }
+
+        &--04 {
+            background-image: url(../../img/bg-rohrmax.png);
+
+            &:hover * {
+                opacity: 1;
+            }
+        }
+
+        &--software {
+            font-family: $font-secondary;
+            font-size: 2.5rem;
+            line-height: 1.1;
+            color: $color-primary-light;
+            margin-bottom: 3rem;
+            opacity: 0;
+        }
+
+        &--kunde {
+            font-family: $font-primary;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: $color-primary-light;
+            margin-bottom: 5rem;
+            opacity: 0;
+        }
+
+        &--icon {
+            font-size: 6.4rem;
+            color: $color-tertiary;
+            opacity: 0;
+        }
+    }
+}
+
+.slider__button,
+.slider__button:link,
+.slider__button:active {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    color: $color-primary-light;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.slider__arrow {
+    font-size: 8rem;
+}

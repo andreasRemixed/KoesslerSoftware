@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url("../img/bg-header.jpg");
+    background-attachment: fixed;
     font-size: clamp(4rem, (calc(1rem + 5vw)), 8rem);
 
     &__headline {
@@ -20,9 +21,8 @@
         font-weight: 300;
         line-height: 1;
         color: $color-secondary;
-    }
 
-    
+    }
 
     &__icon {
         margin-top: auto;
