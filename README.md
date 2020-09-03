@@ -7,3 +7,4 @@ Used Tech:
 - HTML
 - Sass(7-1 architecture, BEM)
 - Javascript
+- Fluid Typography
