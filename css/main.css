@@ -378,7 +378,7 @@ body {
 
 @media (max-width: 1350px) {
   .slider {
-    height: auto;
+    height: 50vh;
   }
   .slider__items {
     -ms-flex-wrap: wrap;
@@ -584,4 +584,104 @@ body {
 .kontakt {
   background-color: #1A2F39;
   font-family: "DM Mono", monospace;
+  padding: 4rem 2.5rem;
+}
+
+.kontakt-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kontaktdaten {
+  width: 50%;
+  padding-right: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+}
+
+.kontaktdaten__block {
+  line-height: 1.5;
+}
+
+.kontaktdaten__text {
+  font-size: 2rem;
+  color: #EEECEC;
+  font-size: 2rem;
+  color: #EEECEC;
+}
+
+.kontaktdaten__text:first-child {
+  font-weight: 700;
+}
+
+.kontaktdaten__link {
+  display: block;
+  font-size: 2rem;
+  color: #EEECEC;
+  text-decoration: none;
+  border-bottom: 2px solid #1A2F39;
+}
+
+.kontaktdaten__link:hover {
+  border-bottom: 2px solid #D9FF38;
+}
+
+.formular {
+  width: 50%;
+}
+
+.formular__form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.formular__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #EEECEC;
+  display: block;
+  width: 80%;
+  height: 15%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-family: "DM Mono", monospace;
+  font-size: 1.8rem;
+  color: #EEECEC;
+}
+
+.formular__input:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.formular__input--nachricht {
+  height: 30rem;
 }
