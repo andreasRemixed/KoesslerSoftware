@@ -1,7 +1,7 @@
 .nav {
     position: fixed;
     top: 0;
-    padding: 2rem 15rem;
+    padding: 1.5rem 15rem;
     width: 100%;
     max-width: 1900px;
     display: flex;
@@ -11,7 +11,7 @@
     font-family: $font-primary;
     text-decoration: none;
     letter-spacing: 2px;
-    //background-color: $color-primary-light;
+    background-color: $color-primary-light;
 
     @media (max-width: 1100px){
         padding: 2rem 2.5rem;
@@ -25,8 +25,8 @@
             letter-spacing: 4px;
             font-weight: 500;
             font-size: 1.8rem;
-
             color: $color-primary-light;
+
             padding: .5rem 1rem;
             border: 2px solid $color-primary-light;
             border-radius: 2px;
@@ -64,8 +64,8 @@
             letter-spacing: inherit;
             font-size: 1.8rem;
             font-weight: 500;
-
             color: $color-primary-light;
+
             padding: .5rem 1rem;
             border: 2px solid $color-primary-light;
             border-radius: 2px;

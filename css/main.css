@@ -250,8 +250,6 @@ body {
   height: 100%;
   border: solid 5px #EEECEC;
   text-decoration: none;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .slider__item:not(:last-child) {
@@ -286,6 +284,9 @@ body {
 
 .slider__item--01 {
   background-image: url(../../img/bg-rohrmax.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider__item--01:hover * {
@@ -294,6 +295,9 @@ body {
 
 .slider__item--02 {
   background-image: url(../../img/bg-fluxguide.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider__item--02:hover * {
@@ -302,6 +306,9 @@ body {
 
 .slider__item--03 {
   background-image: url(../../img/bg-lifesystems.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider__item--03:hover * {
@@ -310,6 +317,9 @@ body {
 
 .slider__item--04 {
   background-image: url(../../img/bg-rohrmax.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider__item--04:hover * {
@@ -364,6 +374,26 @@ body {
 
 .slider__arrow {
   font-size: 8rem;
+}
+
+@media (max-width: 1350px) {
+  .slider {
+    height: auto;
+  }
+  .slider__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .slider__item {
+    width: 48%;
+    margin: 3rem 1%;
+  }
+  .slider__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .slider__button {
+    display: none;
+  }
 }
 
 .section {
@@ -436,7 +466,7 @@ body {
 .nav {
   position: fixed;
   top: 0;
-  padding: 2rem 15rem;
+  padding: 1.5rem 15rem;
   width: 100%;
   max-width: 1900px;
   display: -webkit-box;
@@ -452,6 +482,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
+  background-color: #EEECEC;
 }
 
 @media (max-width: 1100px) {
@@ -546,6 +577,8 @@ body {
   padding: 4rem 2.5rem;
   background-image: url("../img/bg-portfolio.jpg");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .kontakt {

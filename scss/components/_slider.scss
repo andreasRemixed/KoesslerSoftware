@@ -28,8 +28,7 @@
         height: 100%;
         border: solid 5px $color-primary-light;
         text-decoration: none;
-        background-repeat: no-repeat;
-        background-size: cover;
+        
 
         &:not(:last-child) {
             margin-right: 2%;
@@ -54,34 +53,22 @@
 
         &--01 {
             background-image: url(../../img/bg-rohrmax.png);
-
-            &:hover * {
-                opacity: 1;
-            }
+            @include portfolioBgImg;
         }
 
         &--02 {
             background-image: url(../../img/bg-fluxguide.png);
-
-            &:hover * {
-                opacity: 1;
-            }
+            @include portfolioBgImg;
         }
 
         &--03 {
             background-image: url(../../img/bg-lifesystems.png);
-
-            &:hover * {
-                opacity: 1;
-            }
+            @include portfolioBgImg;
         }
 
         &--04 {
             background-image: url(../../img/bg-rohrmax.png);
-
-            &:hover * {
-                opacity: 1;
-            }
+            @include portfolioBgImg;
         }
 
         &--software {
@@ -129,4 +116,30 @@
 
 .slider__arrow {
     font-size: 8rem;
+}
+
+
+
+
+@media (max-width: 1350px){
+    .slider {
+        height: auto;
+    }
+
+    .slider__items {
+        flex-wrap: wrap;
+    }
+
+    .slider__item {
+        width: 48%;
+        margin: 3rem 1%;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    .slider__button {
+        display: none;
+    }
 }
